@@ -3,11 +3,23 @@
 
         <div class="login-pannel">
 
-            <el-form-item label="用户名">
-                <el-input placeholder="请输入用户名" clearable />
+            <div class="login-title">用户登录</div>
+
+            <el-form-item>
+                <el-input placeholder="请输入用户名" />
             </el-form-item>
-            <el-form-item label="密码">
-                <el-input placeholder="请输入密码" clearable />
+            <el-form-item>
+                <el-input placeholder="请输入密码" />
+            </el-form-item>
+            <el-form-item>
+                <div class="check-code-pannel">
+                    <el-input placeholder="请输入验证码" />
+                    <img src="" alt="">
+                </div>
+            </el-form-item>
+
+            <el-form-item>
+                <el-button :style="{width:'100%'}">登录</el-button>
             </el-form-item>
 
         </div>
@@ -25,7 +37,7 @@
     background-size: cover;
     background-position: center;
     background-image: url(../assets/login-bg.jpg);
-    text-align: center;
+    display: flex;
 }
 
 .login-pannel {
@@ -33,6 +45,19 @@
     display: inline-block;
     width: 300px;
     height: 300px;
-    // background-color: black;
+    margin: auto auto;
+    // background-color: rgb(168, 153, 156);
+    opacity: 85%;
+}
+
+.login-title {
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.check-code-pannel {
+    display: inline-block;
 }
 </style>
